@@ -7,7 +7,7 @@ import Signup from "../components/Authentication/Signup";
 const Homepage = () => {
   return (
     <Container maxW="xl" centerContent>
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+      <Box bg="white" w="80%" p={4} m="25px" borderRadius="md" borderWidth="1px">
         <Tabs variant="soft-rounded">
           <TabList mb="1em">
             <Tab width="50%">Login</Tab>

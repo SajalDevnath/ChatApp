@@ -52,7 +52,7 @@ const Login = () => {
       </Button>
       <Button
         colorScheme="red"
-        width="25%"
+        width="30%"
         onClick={() => {
           setEmail("guest@example.com");
           setPassword("123456789");
