@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'monster' : ['Montserrat', 'sans-serif'],
+        'text' : ['Montserrat', 'sans-serif'],
       },
       colors: {
         'paleWhite' : '#e5e5e5',

@@ -5,7 +5,7 @@ import Homepage from "./Pages/Homepage";
 
 function App() {
   return (
-    <div className="App font-monster">
+    <div className="App font-text">
       <Route path="/" component={Homepage} exact />
       <Route path="/chats" component={Chatpage} />
     </div>

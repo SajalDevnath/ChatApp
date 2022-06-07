@@ -6,6 +6,7 @@ import {
   InputGroup,
   InputRightElement,
   Show,
+  Stack,
   VStack,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
@@ -42,24 +43,26 @@ const Login = () => {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <Button
-        colorScheme="blue"
-        width="20%"
-        style={{ marginTop: 15 }}
-        onClick={submitHandler}
-      >
-        Login
-      </Button>
-      <Button
-        colorScheme="red"
-        width="30%"
-        onClick={() => {
-          setEmail("guest@example.com");
-          setPassword("123456789");
-        }}
-      >
-        Guest User
-      </Button>
+      <Stack direction="row" spacing={10} align="center">
+        <Button
+          colorScheme="blue"
+          style={{ marginTop: 15 }}
+          onClick={submitHandler}
+        >
+          Login
+        </Button>
+        <Button
+          colorScheme="green"
+          _hover={{ bg: "green.600" }}
+          style={{ marginTop: 15 }}
+          onClick={() => {
+            setEmail("guest@example.com");
+            setPassword("123456789");
+          }}
+        >
+          Guest User
+        </Button>
+      </Stack>
     </VStack>
   );
 };
